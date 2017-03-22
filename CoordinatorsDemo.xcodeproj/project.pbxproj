@@ -64,10 +64,10 @@
 			children = (
 				C4FC6D3B1E7DBCC5007BCCB9 /* Models.swift */,
 				C4FC6D291E7DBAC4007BCCB9 /* UserEdit.storyboard */,
-				C4FC6D251E7DBAC4007BCCB9 /* AppDelegate.swift */,
-				C4FC6D371E7DBAE1007BCCB9 /* UserEditCoordinator.swift */,
 				C4FC6D271E7DBAC4007BCCB9 /* UserEditViewController.swift */,
 				C4FC6D401E7DC1CE007BCCB9 /* CitiesViewController.swift */,
+				C4FC6D371E7DBAE1007BCCB9 /* UserEditCoordinator.swift */,
+				C4FC6D251E7DBAC4007BCCB9 /* AppDelegate.swift */,
 				C4FC6D3D1E7DBF95007BCCB9 /* Supporting files */,
 			);
 			path = CoordinatorsDemo;
@@ -326,6 +326,7 @@
 				C4FC6D361E7DBAC4007BCCB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

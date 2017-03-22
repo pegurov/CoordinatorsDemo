@@ -2,7 +2,7 @@
 
 import UIKit
 
-class UserEditViewController: UIViewController {
+final class UserEditViewController: UIViewController {
     
     // MARK: - Input -
     var user: User? { didSet { updateView() } }
@@ -20,8 +20,8 @@ class UserEditViewController: UIViewController {
     }
     
     private func updateView() {
-        guard isViewLoaded else { return }
-        
-        userLabel.text = "User: \(user?.name ?? ""), \ncity: \(user?.city?.name ?? "")"
+        if isViewLoaded {
+            userLabel.text = "User: \(user?.name ?? ""), \ncity: \(user?.city?.name ?? "")"
+        }
     }
 }

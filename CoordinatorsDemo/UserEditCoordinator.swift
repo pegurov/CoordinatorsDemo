@@ -39,7 +39,7 @@ final class UserEditCoordinator {
     
     private func updateInterfaces() {
         navigationController.viewControllers.forEach {
-            ($0 as? UserEditViewController)?.user = self.user
+            ($0 as? UserEditViewController)?.user = user
         }
     }
 }

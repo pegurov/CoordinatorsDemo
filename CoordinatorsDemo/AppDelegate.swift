@@ -9,8 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: UserEditCoordinator!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
         guard let navigationController = window?.rootViewController as? UINavigationController else { return true }
+        
         let user = User(name: "Pavel Gurov", city: City(name: "Moscow"))
         
         coordinator = UserEditCoordinator(user: user,

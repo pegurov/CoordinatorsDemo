@@ -2,7 +2,7 @@
 
 import UIKit
 
-class CitiesViewController: UITableViewController {
+final class CitiesViewController: UITableViewController {
 
     // MARK: - Output -
     var onCitySelected: ((City) -> Void)?
