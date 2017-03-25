@@ -5,8 +5,8 @@ import UIKit
 final class UserEditCoordinator {
     
     // MARK: - Properties
-    var user: User { didSet { updateInterfaces() } }
-    var navigationController: UINavigationController
+    private var user: User { didSet { updateInterfaces() } }
+    private weak var navigationController: UINavigationController?
     
     // MARK: - Init
     init(user: User, navigationController: UINavigationController) {
@@ -25,20 +25,20 @@ final class UserEditCoordinator {
         controller.onSelectCity = { [weak self] in
             self?.showCitiesScreen()
         }
-        navigationController.pushViewController(controller, animated: false)
+        navigationController?.pushViewController(controller, animated: false)
     }
     
     private func showCitiesScreen() {
         let controller = UIStoryboard.makeCitiesController()
         controller.onCitySelected = { [weak self] city in
             self?.user.city = city
-            _ = self?.navigationController.popViewController(animated: true)
+            _ = self?.navigationController?.popViewController(animated: true)
         }
-        navigationController.pushViewController(controller, animated: true)
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     private func updateInterfaces() {
-        navigationController.viewControllers.forEach {
+        navigationController?.viewControllers.forEach {
             ($0 as? UserEditViewController)?.user = user
         }
     }

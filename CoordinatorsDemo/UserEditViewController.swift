@@ -9,7 +9,7 @@ final class UserEditViewController: UIViewController {
     
     // MARK: - Output -
     var onSelectCity: (() -> Void)?
- 
+    
     @IBOutlet private weak var userLabel: UILabel!
     @IBAction private func selectCityTap(_ sender: UIButton) {
         onSelectCity?()

@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-697" y="226"/>
         </scene>
-        <!--User Edit View Controller-->
+        <!--Edit user-->
         <scene sceneID="plF-mR-hcc">
             <objects>
-                <viewController storyboardIdentifier="UserEditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZcL-hZ-8RA" customClass="UserEditViewController" customModule="CoordinatorsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserEditViewController" title="Edit user" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZcL-hZ-8RA" customClass="UserEditViewController" customModule="CoordinatorsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ouy-7f-bT2"/>
                         <viewControllerLayoutGuide type="bottom" id="YfB-e5-MJm"/>
@@ -67,10 +67,10 @@ city: Moscow</string>
             </objects>
             <point key="canvasLocation" x="80.799999999999997" y="224.4377811094453"/>
         </scene>
-        <!--Cities View Controller-->
+        <!--Cities-->
         <scene sceneID="eW0-3A-wbL">
             <objects>
-                <tableViewController storyboardIdentifier="CitiesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="guM-iP-4ts" customClass="CitiesViewController" customModule="CoordinatorsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CitiesViewController" title="Cities" useStoryboardIdentifierAsRestorationIdentifier="YES" id="guM-iP-4ts" customClass="CitiesViewController" customModule="CoordinatorsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="jN6-eb-32a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
