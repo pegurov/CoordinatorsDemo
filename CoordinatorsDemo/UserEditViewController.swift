@@ -15,13 +15,16 @@ final class UserEditViewController: UIViewController {
         onSelectCity?()
     }
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         updateView()
     }
     
     private func updateView() {
         if isViewLoaded {
-            userLabel.text = "User: \(user?.name ?? ""), \ncity: \(user?.city?.name ?? "")"
+            userLabel.text = "User: \(user?.name ?? ""), \n"
+                           + "City: \(user?.city?.name ?? "")"
         }
     }
 }
