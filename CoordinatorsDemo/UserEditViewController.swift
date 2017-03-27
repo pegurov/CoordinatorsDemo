@@ -22,7 +22,7 @@ final class UserEditViewController: UIViewController {
     }
     
     private func updateView() {
-        if isViewLoaded {
+        if isViewLoaded && view.window != nil {
             userLabel.text = "User: \(user?.name ?? ""), \n"
                            + "City: \(user?.city?.name ?? "")"
         }
