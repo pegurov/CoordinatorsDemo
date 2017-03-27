@@ -102,7 +102,7 @@ city: Moscow</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKl-Yf-TyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="224"/>
+            <point key="canvasLocation" x="840" y="224"/>
         </scene>
     </scenes>
 </document>
