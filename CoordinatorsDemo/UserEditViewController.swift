@@ -8,7 +8,7 @@ final class UserEditViewController: UIViewController {
     // MARK: - Output -
     var onSelectCity: (() -> Void)?
     
-    @IBOutlet private weak var userLabel: UILabel!
+    @IBOutlet private weak var userLabel: UILabel?
     @IBAction private func selectCityTap(_ sender: UIButton) {
         onSelectCity?()
     }
@@ -20,9 +20,7 @@ final class UserEditViewController: UIViewController {
     }
     
     private func updateView() {
-        if isViewLoaded {
-            userLabel.text = "User: \(user?.name ?? ""), \n"
-                           + "City: \(user?.city?.name ?? "")"
-        }
+        userLabel?.text = "User: \(user?.name ?? ""), \n"
+                        + "City: \(user?.city?.name ?? "")"
     }
 }
