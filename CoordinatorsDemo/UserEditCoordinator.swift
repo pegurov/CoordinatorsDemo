@@ -1,5 +1,9 @@
 import UIKit
 
+protocol UpdateableWithUser: class {
+    var user: User? { get set }
+}
+
 final class UserEditCoordinator {
     
     // MARK: - Properties
@@ -37,7 +41,7 @@ final class UserEditCoordinator {
     
     private func updateInterfaces() {
         navigationController?.viewControllers.forEach {
-            ($0 as? UserEditViewController)?.user = user
+            ($0 as? UpdateableWithUser)?.user = user
         }
     }
 }

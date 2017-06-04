@@ -1,6 +1,6 @@
 import UIKit
 
-final class UserEditViewController: UIViewController {
+final class UserEditViewController: UIViewController, UpdateableWithUser {
     
     // MARK: - Input -
     var user: User? { didSet { updateView() } }
